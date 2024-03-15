@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+.loader{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 64px;
+height: 64px;
+border-radius: 50%;
+    border-top: 2px solid black;
+    animation: load 0.9s infinite linear;
+}
+
+@keyframes load{
+    to {transform: rotate(360deg);}
+}
+
+
+
+/* 2 */
+@keyframes ani{
+    to{background-color: red;}
+    from{background-color: blue;}
+}
+.ani1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    /* display: inline-block; */
+    /* animation-name: ani;
+    animation-duration: 2s; */
+    animation: ani 2s infinite;
+}
+
+
+/* 3 */
+@keyframes ani2{
+    from{transform: translateX(200px);
+    to{transform: translateX(-500px);}}
+}
+.ani2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    left: 100px;
+    /* animation-name: ani;
+    animation-duration: 2s; */
+    animation: ani2 2s infinite;
+}
+
+
+/* 4 */
+@keyframes ani3{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(300px);
+    }
+}
+.ani3{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    left: 400px;
+    /* animation-name: ani;
+    animation-duration: 2s; */
+    animation: ani3 4s infinite;
+}
